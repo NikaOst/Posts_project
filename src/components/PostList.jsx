@@ -3,24 +3,30 @@ import { useEffect, useState } from 'react';
 import styles from '../styles/PostList.module.css';
 import Post from './Post';
 
-function PostList() {
+function PostList({ isDBUpdated, setIsDBUpdated }) {
   const [posts, setPosts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [currentPost, setCurrentPost] = useState(0);
 
-  useEffect(() => {
-    const fetchPosts = async () => {
-      try {
-        const response = await axios.get('https://699eb2ee78dda56d396b075f.mockapi.io/posts');
-        setPosts(response.data);
-      } catch {
-        console.log('Error: GET Posts');
-      }
-      setIsLoading(false);
-    };
+  async function fetchPosts() {
+    try {
+      const response = await axios.get('https://699eb2ee78dda56d396b075f.mockapi.io/posts');
+      setPosts(response.data);
+    } catch {
+      console.log('Error: GET Posts');
+    }
 
+    setIsLoading(false);
+    setIsDBUpdated(false);
+  }
+
+  useEffect(() => {
     fetchPosts();
   }, []);
+
+  if (isDBUpdated) {
+    fetchPosts();
+  }
 
   if (isLoading) {
     return <div>Загрузка постов...</div>;
