@@ -41,7 +41,13 @@ function PostList({ isDBUpdated, setIsDBUpdated }) {
       <h1>Список постов</h1>
       <div className={styles.postList}>
         {posts.slice(currentPost, currentPost + 3).map((post) => (
-          <Post key={post.id} postId={post.id} title={post.title} text={post.text} />
+          <Post
+            key={post.id}
+            postId={post.id}
+            title={post.title}
+            text={post.text}
+            setIsDBUpdated={setIsDBUpdated}
+          />
         ))}
       </div>
       <button
