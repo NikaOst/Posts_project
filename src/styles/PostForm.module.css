@@ -1,0 +1,21 @@
+.inputes {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.inputes label {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form {
+  display: flex;
+  gap: 1rem;
+}
