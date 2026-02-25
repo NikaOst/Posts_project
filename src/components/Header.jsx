@@ -5,10 +5,12 @@ function Header() {
   return (
     <div className={styles.headerContainer}>
       <img src={logo} alt="logo" />
-      <span>Главная</span>
-      <span>Музыка</span>
-      <span>Сообщества</span>
-      <span>Друзья</span>
+      <div className={styles.linkContainer}>
+        <a href="#">Главная</a>
+        <a href="#">Музыка</a>
+        <a href="#">Сообщества</a>
+        <a href="#">Друзья</a>
+      </div>
     </div>
   );
 }

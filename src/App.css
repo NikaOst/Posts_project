@@ -1,3 +1,6 @@
 .postListAndForm {
   display: flex;
+  gap: 6.87rem;
+  justify-content: center;
+  margin-bottom: 6.37rem;
 }

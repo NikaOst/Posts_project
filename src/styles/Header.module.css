@@ -1,0 +1,21 @@
+.headerContainer {
+  display: flex;
+  padding: 2.37rem 8.13rem;
+  align-items: center;
+  background-color: #7d9fff;
+  margin-bottom: 4rem;
+}
+
+.headerContainer img {
+  margin-right: 23rem;
+}
+
+.linkContainer {
+  display: flex;
+  gap: 7.56rem;
+}
+
+.linkContainer a {
+  text-decoration: none;
+  color: black;
+}

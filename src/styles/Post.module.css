@@ -1,15 +1,42 @@
-.buttonsContainer,
-.logoContainer {
+.buttonsContainer {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 3rem;
 }
 
 .buttonsContainer button {
   width: 5rem;
+  border-radius: 1rem;
+  padding: 0.47rem;
+  border: none;
+  cursor: pointer;
 }
 
 .logoContainer img {
   width: 30px;
   height: auto;
+}
+
+.postContainer {
+  display: flex;
+  background-color: #3f5cc0;
+  color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
 }

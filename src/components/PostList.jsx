@@ -37,7 +37,7 @@ function PostList({ isDBUpdated, setIsDBUpdated }) {
   }
 
   return (
-    <div>
+    <div className={styles.postListContainer}>
       <h1>Список постов</h1>
       <div className={styles.postList}>
         {posts.slice(currentPost, currentPost + 3).map((post) => (
@@ -51,6 +51,7 @@ function PostList({ isDBUpdated, setIsDBUpdated }) {
         ))}
       </div>
       <button
+        className={styles.nextButton}
         onClick={() => {
           setCurrentPost((prev) => (prev + 3 >= posts.length ? 0 : prev + 3));
         }}>

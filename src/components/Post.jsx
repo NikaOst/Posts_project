@@ -21,8 +21,8 @@ function Post({ title, text, postId, setIsDBUpdated }) {
         <span>User logo</span>
       </div>
       <div className={styles.textContainer}>
-        <h2>{title}</h2>
-        <h1>{text}</h1>
+        <h3>{title}</h3>
+        <h2>{text}</h2>
       </div>
       <div className={styles.buttonsContainer}>
         <span>{postId}</span>
