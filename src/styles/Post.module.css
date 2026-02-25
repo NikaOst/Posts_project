@@ -1,0 +1,15 @@
+.buttonsContainer,
+.logoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.buttonsContainer button {
+  width: 5rem;
+}
+
+.logoContainer img {
+  width: 30px;
+  height: auto;
+}
