@@ -6,6 +6,7 @@ import Post from './Post';
 function PostList() {
   const [posts, setPosts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [currentPost, setCurrentPost] = useState(0);
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -30,10 +31,19 @@ function PostList() {
   }
 
   return (
-    <div className={styles.postList}>
-      {posts.map((post) => (
-        <Post key={post.id} postId={post.id} title={post.title} text={post.text} />
-      ))}
+    <div>
+      <h1>Список постов</h1>
+      <div className={styles.postList}>
+        {posts.slice(currentPost, currentPost + 3).map((post) => (
+          <Post key={post.id} postId={post.id} title={post.title} text={post.text} />
+        ))}
+      </div>
+      <button
+        onClick={() => {
+          setCurrentPost((prev) => (prev + 3 >= posts.length ? 0 : prev + 3));
+        }}>
+        Далее
+      </button>
     </div>
   );
 }
