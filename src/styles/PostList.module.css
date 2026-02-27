@@ -1,0 +1,30 @@
+.postList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.postListContainer {
+  width: 60%;
+  padding: 3.75rem 6rem;
+  background-color: #7d9fff;
+}
+
+.postListContainer h1 {
+  text-align: center;
+}
+
+.postListContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.nextButton {
+  margin: 0 auto;
+  width: 7rem;
+  border-radius: 1rem;
+  padding: 0.47rem;
+  border: none;
+  cursor: pointer;
+}

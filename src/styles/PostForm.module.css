@@ -1,0 +1,57 @@
+.inputes {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.inputes input {
+  border: none;
+  background-color: transparent;
+}
+
+.inputes input:focus {
+  outline: none;
+}
+
+.inputes input::placeholder {
+  color: #9ca3af;
+}
+
+.inputes label {
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  display: flex;
+  gap: 1rem;
+  background-color: #3f5cc0;
+  padding: 1.87rem 0.75rem;
+  border-radius: 1rem;
+  color: white;
+}
+
+.postForm {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #7d9fff;
+  padding: 3.75rem 4rem;
+  width: 28%;
+}
+
+.form img {
+  width: 30px;
+  height: auto;
+  align-self: flex-start;
+}
+
+.submitBtn {
+  margin: 0 auto;
+  width: 7rem;
+  border-radius: 1rem;
+  padding: 0.47rem;
+  border: none;
+  cursor: pointer;
+}
