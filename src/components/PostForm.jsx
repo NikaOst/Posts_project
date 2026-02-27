@@ -22,7 +22,7 @@ function PostForm({ setIsDBUpdated }) {
   };
 
   return (
-    <div>
+    <div className={styles.postForm}>
       <h1>Написать пост</h1>
       <form onSubmit={handleSubmit(addNewPosts)} className={styles.form}>
         <img src={avatar} alt="avatar" />
@@ -45,7 +45,7 @@ function PostForm({ setIsDBUpdated }) {
               />
             </label>
           </div>
-          <input type="submit" value={'Публикация'} />
+          <input className={styles.submitBtn} type="submit" value={'Публикация'} />
         </div>
       </form>
     </div>
